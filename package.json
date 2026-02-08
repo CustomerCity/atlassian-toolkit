@@ -1,0 +1,27 @@
+{
+  "name": "atlassian-toolkit",
+  "version": "1.0.0",
+  "description": "Reusable Atlassian toolkit for automated Confluence documentation, JIRA project setup, and Playwright screenshots",
+  "type": "module",
+  "bin": {
+    "atl": "./bin/cli.mjs"
+  },
+  "scripts": {
+    "confluence:setup": "node bin/cli.mjs confluence setup",
+    "confluence:update": "node bin/cli.mjs confluence update",
+    "confluence:upgrade": "node bin/cli.mjs confluence upgrade",
+    "jira:setup": "node bin/cli.mjs jira setup",
+    "jira:create-issues": "node bin/cli.mjs jira create-issues",
+    "screenshots": "node bin/cli.mjs screenshots",
+    "test": "node --test lib/*.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["atlassian", "confluence", "jira", "documentation", "screenshots", "automation"],
+  "license": "MIT"
+}
